@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 64, 201);
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.App {
+    width: 100vw;
+    max-width: 800px;
+    background-color: aliceblue;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.todoHead {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.Add {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.AddInput {
+    flex-grow: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    height: 50px;
+}
+
+.EmptyTodo {
+    font-size: 1.8rem;
+    font-style: italic;
+    color: red;
+    padding: 5px;
+}
+
+.TodoList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.TodoItem {
+    display: flex;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.TodoLabel {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.TodoCheck {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.SaveButton, .DeleteButton, .EditButton, .AddButton {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.AddButton {
+    border-radius: 5px;
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+}
+
+.EditButton {
+    width: 40px;
+    height: 40px;
+}
+
+.DeleteButton {
+    color: red;
+    margin-left: 10px;
+}
+
+.EditTodo {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.EditInput {
+    flex-grow: 1;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
